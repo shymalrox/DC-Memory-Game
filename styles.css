@@ -1,0 +1,49 @@
+.container {
+    background-color: #e6e6ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 80%;
+    margin: 60px auto;
+}
+
+.grid img {
+    margin: 2px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.grid img.flip {
+    transform: rotateY(180deg);
+}
+
+.popup {
+    width: 400px;
+    height: 400px;
+    z-index:20;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+    font-size: 23px;
+}
+
+.data span {
+    color: #e6ffe6;
+    font-size: 30px;
+}
