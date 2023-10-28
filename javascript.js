@@ -1,16 +1,16 @@
 let cardArray = [
-    { name: "batman", img: "media/batman.png", },
-    { name: "batman", img: "media/batman.png", },
-    { name: "aquaman", img: "media/aquaman.jpg", },
-    { name: "aquaman", img: "media/aquaman.jpg", },
-    { name: "green-lantern", img: "media/green-lantern.jpg", },
-    { name: "green-lantern", img: 'media/green-lantern.jpg', },
-    { name: "superman", img: "media/superman.png", },
-    { name: "superman", img: "media/superman.png", },
-    { name: "flash", img: "media/flash.jpg", },
-    { name: "flash", img: "media/flash.jpg", },
-    { name: "wonder-woman", img: "media/wonder-woman.png", },
-    { name: "wonder-woman", img: "media/wonder-woman.png", },
+    { name: "batman", img: "Media/batman.png", },
+    { name: "batman", img: "Media/batman.png", },
+    { name: "aquaman", img: "Media/aquaman.jpg", },
+    { name: "aquaman", img: "Media/aquaman.jpg", },
+    { name: "green-lantern", img: "Media/green-lantern.jpg", },
+    { name: "green-lantern", img: "Media/green-lantern.jpg", },
+    { name: "superman", img: "Media/superman.png", },
+    { name: "superman", img: "Media/superman.png", },
+    { name: "flash", img: "Media/flash.jpg", },
+    { name: "flash", img: "Media/flash.jpg", },
+    { name: "wonder-woman", img: "Media/wonder-woman.png", },
+    { name: "wonder-woman", img: "Media/wonder-woman.png", },
 ];
 
 let grid = document.querySelector(".grid");
@@ -39,7 +39,7 @@ function createBoard(grid, array) {
     popup.style.display = "none";
     array.forEach((arr, index) => {
         let img = document.createElement("img");
-        img.setAttribute('src', 'media/dc-comics.jpg');
+        img.setAttribute('src', 'Media/dc-comics.jpg');
         img.setAttribute('data-id', index);
         grid.appendChild(img);
     })
@@ -69,8 +69,8 @@ function checkForMatch() {
         scoreBoard.innerHTML = cardsWon;
         setTimeout(checkWon,500)
     } else {
-        imgs[firstCard].setAttribute('src', 'media/dc-comics.jpg')
-        imgs[secondCard].setAttribute('src', 'media/dc-comics.jpg')
+        imgs[firstCard].setAttribute('src', 'Media/dc-comics.jpg')
+        imgs[secondCard].setAttribute('src', 'Media/dc-comics.jpg')
     }
     cardsSelected = [];
     cardsId = [];
